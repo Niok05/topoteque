@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bretagne</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      h1.title {
+        margin-top: 20px;
+        font-size: 2em;
+      }
+
+      h2.subtitle {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      p.description {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+
+      .grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        margin: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .card h2 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 1em;
+      }
+
+      .card:hover {
+        background-color: #0056b3;
+      }
+
+      .return-button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+      }
+
+      .return-button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Bienvenue en Bretagne</h1>
+      <h2 class="subtitle">Découvrez les sites d'escalade disponibles</h2>
+
+      <div class="grid">
+        <a
+          class="card"
+          href="https://drive.google.com/file/d/1begCMU5_viNi0g_vB3oIcj4vdxYKS_wE/view?usp=drive_link"
+          target="_blank"
+        >
+          <h2>La Chaise du Diable</h2>
+          <p>Morbihan</p>
+          <p>Site de voie</p>
+        </a>
+      </div>
+
+      <a class="return-button" href="../../regions_france.html"
+        >Retour aux régions</a
+      >
+    </main>
+  </body>
+</html>
