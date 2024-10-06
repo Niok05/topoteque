@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Topo Escalade - Choisissez un Pays</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family:
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    Segoe UI,
+                    Roboto,
+                    Oxygen,
+                    Ubuntu,
+                    Cantarell,
+                    Fira Sans,
+                    Droid Sans,
+                    Helvetica Neue,
+                    sans-serif;
+            }
+
+            .title {
+                margin: 0;
+                line-height: 1.15;
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            .subtitle {
+                text-align: center;
+                font-size: 2rem;
+                margin: 0.5rem 0;
+            }
+
+            .description,
+            p {
+                margin: 4rem 0;
+                line-height: 1.5;
+                font-size: 1.5rem;
+                text-align: center; /* Centrer les paragraphes */
+            }
+
+            .grid {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 800px;
+                margin: 0 auto; /* Centrer la grille */
+            }
+
+            .button {
+                display: inline-block;
+                background-color: #007bff; /* Couleur de fond du bouton */
+                color: white; /* Couleur du texte */
+                padding: 10px 20px; /* Espacement interne */
+                margin: 10px; /* Espacement externe */
+                border: none; /* Pas de bordure */
+                border-radius: 5px; /* Coins arrondis */
+                text-decoration: none; /* Pas de soulignement */
+                font-size: 1rem; /* Taille de la police */
+                cursor: pointer; /* Curseur en main au survol */
+                transition: background-color 0.3s; /* Animation au survol */
+            }
+
+            .button:hover {
+                background-color: #0056b3; /* Couleur au survol */
+            }
+
+            .button:focus {
+                outline: none; /* Enlever le contour de focus */
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="title">La topotèque</h1>
+
+            <p>
+                Partage tes topos et accède à une mine d'or de topos
+                disponibles.
+            </p>
+            <p>
+                Ensemble, faisons grandir notre passion pour l'escalade et
+                explorons toujours plus de nouveaux horizons !
+            </p>
+
+            <div class="grid">
+                <a class="button" href="regions_france.html">France</a>
+                <a class="button" href="regions_autres_pays.html"
+                    >Autres Pays</a
+                >
+            </div>
+        </main>
+    </body>
+</html>

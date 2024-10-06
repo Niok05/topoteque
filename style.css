@@ -1,0 +1,4 @@
+< !doctype html><html lang="fr"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Topo Escalade - Choisissez un Pays</title><link rel="stylesheet" href="styles.css">< !-- Lien vers ton fichier CSS existant --></head><body><main><h1 class="title">Choisissez un Pays</h1><p class="description">Sélectionnez un pays pour explorer les sites d'escalade disponibles.</p>
+
+<div class="grid"><a class="card" href="regions_france.html"><h2>France</h2><p>Découvrez les meilleurs spots d'escalade en France.</p>
+ </a><a class="card" href="regions_autres_pays.html"><h2>Autres Pays</h2><p>Explorez des destinations d'escalade à l' étranger.</p></a></div></main></body></html>
