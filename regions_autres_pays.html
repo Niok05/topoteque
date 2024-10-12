@@ -39,8 +39,8 @@
       }
 
       .card {
-        background-color: #007bff;
-        color: white;
+        background-color: transparent;
+        color: black; /* Set the text color to black */
         text-decoration: none;
         padding: 15px 30px;
         margin: 10px;
@@ -48,20 +48,18 @@
         display: inline-block;
         width: 250px;
         text-align: center;
-        transition: background-color 0.3s ease;
+        transition: transform 0.3s ease;
       }
 
-      .card h2 {
-        font-size: 1.4em;
-        margin-bottom: 10px;
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
       }
 
-      .card p {
-        font-size: 1em;
-      }
-
-      .card:hover {
-        background-color: #0056b3;
+      .card img:hover {
+        transform: scale(1.05);
       }
 
       .return-button {
@@ -92,9 +90,12 @@
           href="https://drive.google.com/file/d/1fQFBRq4Op4xEOLSpB57Jeg5Tms4VuXi1/view?usp=drive_link"
           target="_blank"
         >
-          <h2>Parois de légende</h2>
-          <p>Monde</p>
-          <p>Site de grandes voies</p>
+          <div class="description-topo">
+            <h3>Parois de légende</h3>
+            <p>Monde</p>
+            <p>Site de grandes voies</p>
+          </div>
+          <img src="image/parois_de_legende.jpg" alt="Parois de légende - Monde" />
         </a>
       </div>
 
