@@ -34,11 +34,6 @@
         color: #007bff;
       }
 
-      p.description {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-      }
-
       .grid {
         display: flex;
         justify-content: center;
@@ -47,29 +42,42 @@
       }
 
       .card {
-        background-color: #007bff;
-        color: white;
+        background-color: transparent;
         text-decoration: none;
-        padding: 15px 30px;
+        padding: 15px;
         margin: 10px;
         border-radius: 10px;
         display: inline-block;
         width: 250px;
         text-align: center;
-        transition: background-color 0.3s ease;
+        transition: transform 0.3s ease;
       }
 
-      .card h2 {
-        font-size: 1.4em;
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .card img:hover {
+        transform: scale(1.05);
+      }
+
+      .description-topo {
+        color: black; /* Set description text color to black */
         margin-bottom: 10px;
       }
 
-      .card p {
-        font-size: 1em;
+      .description-topo h3 {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: bold;
       }
 
-      .card:hover {
-        background-color: #0056b3;
+      .description-topo p {
+        margin: 5px 0;
+        font-size: 1em;
       }
 
       .return-button {
@@ -102,8 +110,11 @@
           href="https://drive.google.com/file/d/1EngVcdL_ZlEVsYa0_YtT24kA6cFBho2p/view?usp=drive_link"
           target="_blank"
         >
-          <h2>St Mihiel</h2>
-          <p>Site de voie</p>
+          <div class="description-topo">
+            <h3>St Mihiel</h3>
+            <p>Site de voie</p>
+          </div>
+          <img src="images/st_mihiel.jpg" alt="St Mihiel - Site de voie" />
         </a>
       </div>
 
@@ -115,14 +126,15 @@
           href="https://drive.google.com/file/d/1mvLL8TGq4hIgmw58QkPwG8jlj2U7ZLYj/view?usp=drive_link"
           target="_blank"
         >
-          <h2>Bergholtz</h2>
-          <p>Site de voie</p>
+          <div class="description-topo">
+            <h3>Bergholtz</h3>
+            <p>Site de voie</p>
+          </div>
+          <img src="images/bergholtz.jpg" alt="Bergholtz - Site de voie" />
         </a>
       </div>
 
-      <a class="return-button" href="regions_france.html"
-        >Retour aux régions</a
-      >
+      <a class="return-button" href="regions_france.html">Retour aux régions</a>
     </main>
   </body>
 </html>
