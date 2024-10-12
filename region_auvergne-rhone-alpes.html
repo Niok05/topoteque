@@ -27,11 +27,6 @@
         margin-bottom: 20px;
       }
 
-      p.description {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-      }
-
       .grid {
         display: flex;
         justify-content: center;
@@ -39,7 +34,7 @@
       }
 
       .card {
-        background-color: #007bff;
+        background-color: transparent;
         color: white;
         text-decoration: none;
         padding: 15px 30px;
@@ -48,20 +43,18 @@
         display: inline-block;
         width: 250px;
         text-align: center;
-        transition: background-color 0.3s ease;
+        transition: transform 0.3s ease;
       }
 
-      .card h2 {
-        font-size: 1.4em;
-        margin-bottom: 10px;
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
       }
 
-      .card p {
-        font-size: 1em;
-      }
-
-      .card:hover {
-        background-color: #0056b3;
+      .card img:hover {
+        transform: scale(1.05);
       }
 
       .return-button {
@@ -79,6 +72,22 @@
       .return-button:hover {
         background-color: #218838;
       }
+
+      .description-topo {
+        margin-bottom: 15px;
+        color: black;
+      }
+
+      .description-topo h3 {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .description-topo p {
+        margin: 5px 0;
+        font-size: 1em;
+      }
     </style>
   </head>
   <body>
@@ -92,15 +101,15 @@
           href="https://drive.google.com/file/d/1zHOPlJGkAbM9-CD3BWjiovgMdZVHntPf/view?usp=drive_link"
           target="_blank"
         >
-          <h2>Pontamafrey</h2>
-          <p>Savoie</p>
-          <p>Site de voie</p>
+          <div class="description-topo">
+            <h3>Pontamafrey</h3>
+            <p>Savoie - Site de voie</p>
+          </div>
+          <img src="images/topo_pontamafrey.jpg" alt="Pontamafrey - Savoie" />
         </a>
       </div>
 
-      <a class="return-button" href="regions_france.html"
-        >Retour aux régions</a
-      >
+      <a class="return-button" href="regions_france.html">Retour aux régions</a>
     </main>
   </body>
 </html>
