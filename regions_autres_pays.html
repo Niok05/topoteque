@@ -27,9 +27,11 @@
         margin-bottom: 20px;
       }
 
-      p.description {
-        font-size: 1.2em;
-        margin-bottom: 30px;
+      h3.country-title {
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #007bff;
       }
 
       .grid {
@@ -40,7 +42,7 @@
 
       .card {
         background-color: transparent;
-        color: black; /* Set the text color to black */
+        color: black;
         text-decoration: none;
         padding: 15px 30px;
         margin: 10px;
@@ -84,6 +86,8 @@
       <h1 class="title">Bienvenue à travers le monde</h1>
       <h2 class="subtitle">Découvre les topos disponibles</h2>
 
+      <!-- Monde -->
+      <h3 class="country-title">Monde</h3>
       <div class="grid">
         <a
           class="card"
@@ -99,9 +103,28 @@
         </a>
       </div>
 
-      <a class="return-button" href="regions_france.html"
-        >Retour aux régions</a
-      >
+      <!-- Exemple pour un autre pays (ajoutez des topos selon le pays) -->
+      <!-- Ajout d'un titre pour un autre pays, par exemple : Espagne -->
+      <h3 class="country-title">Espagne</h3>
+      <div class="grid">
+        <a
+          class="card"
+          href="#"
+          target="_blank"
+        >
+          <div class="description-topo">
+            <h3>El Chorro</h3>
+            <p>Espagne</p>
+            <p>Site de grandes voies</p>
+          </div>
+          <img src="image/el_chorro.jpg" alt="El Chorro - Espagne" />
+        </a>
+      </div>
+
+      <!-- Ajoutez d'autres pays ici -->
+
+      <a class="return-button" href="regions_france.html">Retour aux régions</a>
     </main>
   </body>
 </html>
+
