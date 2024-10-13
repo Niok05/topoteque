@@ -27,20 +27,22 @@
         margin-bottom: 20px;
       }
 
-      p.description {
-        font-size: 1.2em;
-        margin-bottom: 30px;
+      h3.dept-title {
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #007bff;
       }
 
       .grid {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 30px;
       }
 
       .card {
-        background-color: #007bff;
-        color: white;
+        background-color: transparent;
         text-decoration: none;
         padding: 15px 30px;
         margin: 10px;
@@ -48,20 +50,33 @@
         display: inline-block;
         width: 250px;
         text-align: center;
-        transition: background-color 0.3s ease;
+        transition: transform 0.3s ease;
       }
 
-      .card h2 {
-        font-size: 1.4em;
-        margin-bottom: 10px;
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
       }
 
-      .card p {
+      .card img:hover {
+        transform: scale(1.05);
+      }
+
+      .description-topo {
+        color: black; /* Set the text color to black */
+      }
+
+      .description-topo h3 {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .description-topo p {
+        margin: 5px 0;
         font-size: 1em;
-      }
-
-      .card:hover {
-        background-color: #0056b3;
       }
 
       .return-button {
@@ -86,21 +101,23 @@
       <h1 class="title">Bienvenue dans les Pays-de-la-Loire</h1>
       <h2 class="subtitle">Découvre les topos disponibles</h2>
 
+      <!-- Vendée & Maine-et-Loire -->
+      <h3 class="dept-title">Vendée et Maine-et-Loire</h3>
       <div class="grid">
         <a
           class="card"
           href="https://drive.google.com/file/d/1nKMP--P76af-EFO1emkvMNog_nllhtmr/view?usp=drive_link"
           target="_blank"
         >
-          <h2>Escalade en Vendée et Maine-et-Loire</h2>
-          <p>Vendée & Maine-et-Loire</p>
-          <p>Site de voie</p>
+          <div class="description-topo">
+            <h3>Escalade en Vendée et Maine-et-Loire</h3>
+            <p>Site de voie</p>
+          </div>
+          <img src="image/escalade_vendee_maine_et_loire.jpg" alt="Escalade en Vendée et Maine-et-Loire" />
         </a>
       </div>
 
-      <a class="return-button" href="regions_france.html"
-        >Retour aux régions</a
-      >
+      <a class="return-button" href="regions_france.html">Retour aux régions</a>
     </main>
   </body>
 </html>
