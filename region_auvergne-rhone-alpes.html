@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auvergne-Rhone-Alpes</title>
+    <title>Auvergne-Rhône-Alpes</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -27,15 +27,23 @@
         margin-bottom: 20px;
       }
 
+      h3.dept-title {
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #007bff;
+      }
+
       .grid {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 30px;
       }
 
       .card {
         background-color: transparent;
-        color: black; /* Change to black */
+        color: black;
         text-decoration: none;
         padding: 15px 30px;
         margin: 10px;
@@ -57,6 +65,22 @@
         transform: scale(1.05);
       }
 
+      .description-topo {
+        margin-bottom: 15px;
+        color: black;
+      }
+
+      .description-topo h3 {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .description-topo p {
+        margin: 5px 0;
+        font-size: 1em;
+      }
+
       .return-button {
         display: inline-block;
         margin-top: 30px;
@@ -72,29 +96,15 @@
       .return-button:hover {
         background-color: #218838;
       }
-
-      .description-topo {
-        margin-bottom: 15px;
-        color: black; /* Set description text color to black */
-      }
-
-      .description-topo h3 {
-        margin: 0;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-
-      .description-topo p {
-        margin: 5px 0;
-        font-size: 1em;
-      }
     </style>
   </head>
   <body>
     <main>
-      <h1 class="title">Bienvenue en Auvergne-Rhone-Alpes</h1>
+      <h1 class="title">Bienvenue en Auvergne-Rhône-Alpes</h1>
       <h2 class="subtitle">Découvre les topos disponibles</h2>
 
+      <!-- Savoie -->
+      <h3 class="dept-title">Savoie (73)</h3>
       <div class="grid">
         <a
           class="card"
@@ -109,7 +119,9 @@
         </a>
       </div>
 
-      <a class="return-button" href="regions_france.html">Retour aux régions</a>
+      <a class="return-button" href="regions_france.html"
+        >Retour aux régions</a
+      >
     </main>
   </body>
 </html>
