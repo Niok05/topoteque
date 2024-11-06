@@ -1,98 +1,91 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Topo Escalade - Choisissez un Pays</title>
-        <link rel="stylesheet" href="styles.css" />
-        <style>
-            body {
-                padding: 0;
-                margin: 0;
-                font-family:
-                    -apple-system,
-                    BlinkMacSystemFont,
-                    Segoe UI,
-                    Roboto,
-                    Oxygen,
-                    Ubuntu,
-                    Cantarell,
-                    Fira Sans,
-                    Droid Sans,
-                    Helvetica Neue,
-                    sans-serif;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topo Escalade - Choisissez un Pays</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            background-image: url('image/fond_ecran.jpg'); /* Chemin vers votre image */
+            background-size: cover; /* Pour que l'image couvre toute la page */
+            background-position: center; /* Pour centrer l'image */
+            background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+        }
 
-            .title {
-                margin: 0;
-                line-height: 1.15;
-                font-size: 4rem;
-                text-align: center;
-            }
+        .title {
+            margin: 0;
+            line-height: 1.15;
+            font-size: 4rem;
+            text-align: center;
+            color: white; /* Pour rendre le texte plus visible sur l'image */
+        }
 
-            .subtitle {
-                text-align: center;
-                font-size: 2rem;
-                margin: 0.5rem 0;
-            }
+        .subtitle {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0.5rem 0;
+            color: white; /* Pour rendre le texte plus visible sur l'image */
+        }
 
-            .description,
-            p {
-                margin: 4rem 0;
-                line-height: 1.5;
-                font-size: 1.5rem;
-                text-align: center; /* Centrer les paragraphes */
-            }
+        .description, p {
+            margin: 4rem 0;
+            line-height: 1.5;
+            font-size: 1.5rem;
+            text-align: center; /* Centrer les paragraphes */
+            color: white; /* Pour rendre le texte plus visible sur l'image */
+        }
 
-            .grid {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                max-width: 800px;
-                margin: 0 auto; /* Centrer la grille */
-            }
+        .grid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto; /* Centrer la grille */
+        }
 
-            .button {
-                display: inline-block;
-                background-color: #007bff; /* Couleur de fond du bouton */
-                color: white; /* Couleur du texte */
-                padding: 10px 20px; /* Espacement interne */
-                margin: 10px; /* Espacement externe */
-                border: none; /* Pas de bordure */
-                border-radius: 5px; /* Coins arrondis */
-                text-decoration: none; /* Pas de soulignement */
-                font-size: 1rem; /* Taille de la police */
-                cursor: pointer; /* Curseur en main au survol */
-                transition: background-color 0.3s; /* Animation au survol */
-            }
+        .button {
+            display: inline-block;
+            background-color: #007bff; /* Couleur de fond du bouton */
+            color: white; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement interne */
+            margin: 10px; /* Espacement externe */
+            border: none; /* Pas de bordure */
+            border-radius: 5px; /* Coins arrondis */
+            text-decoration: none; /* Pas de soulignement */
+            font-size: 1rem; /* Taille de la police */
+            cursor: pointer; /* Curseur en main au survol */
+            transition: background-color 0.3s; /* Animation au survol */
+        }
 
-            .button:hover {
-                background-color: #0056b3; /* Couleur au survol */
-            }
+        .button:hover {
+            background-color: #0056b3; /* Couleur au survol */
+        }
 
-            .button:focus {
-                outline: none; /* Enlever le contour de focus */
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <h1 class="title">La topothèque</h1>
+        .button:focus {
+            outline: none; /* Enlever le contour de focus */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="title">La topothèque</h1>
 
-            <p>
-                Rejoins la team en partageant tes topos !
-            </p>
-            <p>
-                Ensemble créons la plus belle topothèque possible afin de toujours trouver ta voie.
-            </p>
+        <p>
+            Rejoins la team en partageant tes topos !
+        </p>
+        <p>
+            Ensemble créons la plus belle topothèque possible afin de toujours trouver ta voie.
+        </p>
 
-            <div class="grid">
-                <a class="button" href="regions_france.html">France</a>
-                <a class="button" href="regions_autres_pays.html"
-                    >Autres Pays</a
-                >
-            </div>
-        </main>
-    </body>
+        <div class="grid">
+            <a class="button" href="regions_france.html">France</a>
+            <a class="button" href="regions_autres_pays.html">Autres Pays</a>
+        </div>
+    </main>
+</body>
 </html>
