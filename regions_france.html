@@ -1,154 +1,107 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autres pays</title>
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        height: 100vh; /* Prend toute la hauteur de la fenêtre */
-        display: flex;
-        justify-content: center; /* Centre horizontalement */
-        align-items: center; /* Centre verticalement */
-        position: relative; /* Pour positionner le calque overlay */
-        background-image: url('image/fond_ecran_2.jpg'); /* Image de fond */
-        background-size: cover; /* Couvre toute la surface */
-        background-position: center; /* Centre l'image */
-        background-repeat: no-repeat; /* Ne répète pas l'image */
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Topo Escalade - Régions de France</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                height: 100vh; /* Prend toute la hauteur de la fenêtre */
+                display: flex;
+                justify-content: center; /* Centre horizontalement */
+                align-items: center; /* Centre verticalement */
+                position: relative; /* Pour positionner le calque overlay */
+                background-image: url('image/fond_ecran.jpg'); /* Image de fond */
+                background-size: cover; /* Couvre toute la surface */
+                background-position: center; /* Centre l'image */
+                background-repeat: no-repeat; /* Ne répète pas l'image */
+            }
 
-      main {
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.6); /* Fond blanc avec opacité */
-        padding: 20px;
-        border-radius: 10px; /* Coins arrondis */
-        position: relative;
-        z-index: 2;
-        max-width: 800px; /* Limite la largeur */
-        margin: 20px; /* Ajoute un espace autour pour éviter le débordement */
-      }
+            main {
+                text-align: center; /* Centre le texte à l'intérieur */
+                background-color: rgba(255, 255, 255, 0.6); /* Fond blanc avec opacité */
+                padding: 20px; /* Ajoute de l'espace interne */
+                border-radius: 10px; /* Coins arrondis */
+                position: relative; /* Pour être au-dessus du calque overlay */
+                z-index: 2; /* Positionne le contenu principal au-dessus du calque */
+            }
 
-      h1.title {
-        margin-bottom: 20px;
-        font-size: 2em;
-      }
+            h1,
+            h2,
+            p.description {
+                text-align: center;
+            }
 
-      h2.subtitle {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-      }
+            h1 {
+                margin-bottom: 20px;
+            }
 
-      h3.country-title {
-        font-size: 1.8em;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        color: #007bff;
-      }
+            .button {
+                display: inline-block;
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
 
-      .grid {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
+            .button:hover {
+                background-color: #0056b3;
+            }
 
-      .card {
-        background-color: transparent;
-        color: black;
-        text-decoration: none;
-        padding: 15px 30px;
-        margin: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        width: 250px;
-        text-align: center;
-        transition: transform 0.3s ease;
-      }
+            .button:focus {
+                outline: none;
+            }
 
-      .card img {
-        width: 100%;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
+            /* Styles spécifiques pour le bouton de retour */
+            .button-return {
+                background-color: #28a745;
+            }
 
-      .card img:hover {
-        transform: scale(1.05);
-      }
+            .button-return:hover {
+                background-color: #218838;
+            }
 
-      .return-button {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 15px 30px;
-        background-color: #28a745;
-        color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        font-size: 1.2em;
-        transition: background-color 0.3s ease;
-      }
+            /* Centrer tous les boutons */
+            .button-container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">Bienvenue en France</h1>
+        <h2 class="subtitle">Découvre les sites d'escalade par région</h2>
+        <p class="description">
+            Choisis une région et explore les sites d'escalade disponibles
+        </p>
 
-      .return-button:hover {
-        background-color: #218838;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1 class="title">Bienvenue à travers le monde</h1>
-      <h2 class="subtitle">Découvre les topos disponibles</h2>
+        <div class="button-container">
+            <a class="button" href="region_auvergne-rhone-alpes.html">Auvergne-Rhône-Alpes</a>
+            <a class="button" href="region_bourgogne-franche-comte.html">Bourgogne-Franche-Comté</a>
+            <a class="button" href="region_bretagne.html">Bretagne</a>
+            <a class="button" href="region_centre-val_de_loire.html">Centre-Val de Loire</a>
+            <a class="button" href="region_corse.html">Corse</a>
+            <a class="button" href="region_grand_est.html">Grand Est</a>
+            <a class="button" href="region_hauts-de-france.html">Hauts-de-France</a>
+            <a class="button" href="region_ile-de-france.html">Île-de-France</a>
+            <a class="button" href="region_normandie.html">Normandie</a>
+            <a class="button" href="region_nouvelle-aquitaine.html">Nouvelle-Aquitaine</a>
+            <a class="button" href="region_occitanie.html">Occitanie</a>
+            <a class="button" href="region_pays_de_la_loire.html">Pays de la Loire</a>
+            <a class="button" href="region_provence-alpes-cote_dazur.html">Provence-Alpes-Côte d'Azur</a>
+        </div>
 
-      <!-- Monde -->
-      <h3 class="country-title">Monde</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1fQFBRq4Op4xEOLSpB57Jeg5Tms4VuXi1/view?usp=drive_link"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h3>Parois de légende</h3>
-            <p>Sites de grande voie</p>
-          </div>
-          <img src="image/parois_de_legende.jpg" alt="Parois de légende - Monde" />
-        </a>
-      </div>
-
-      <!-- Croatie -->
-      <h3 class="country-title">Croatie</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1k0w29GbGLhTs6WqzDGGUfgjgoldUmdfY/view?usp=sharing"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h3>Croatia</h3>
-            <p>Site de voie & grande voie</p>
-          </div>
-          <img src="image/croatia.jpg" alt="Croatia - Croatie" />
-        </a>
-      </div>
-
-      <!-- Luxembourg -->
-      <h3 class="country-title">Luxembourg</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1LkS_XpVtDmOm-YH4DLjml3yq5N21wlWe/view?usp=sharing"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h3>Climbing in Berdorf</h3>
-            <p>Site de voie</p>
-          </div>
-          <img src="image/climbing_in_berdorf.jpg" alt="Climbing in Berdorf - Luxembourg" />
-        </a>
-      </div>
-
-      <a class="return-button" href="regions_france.html">Retour aux régions</a>
-    </main>
-  </body>
+        <p style="text-align: center">
+            <a class="button button-return" href="index.html">Retour à l'accueil</a>
+        </p>
+    </body>
 </html>
