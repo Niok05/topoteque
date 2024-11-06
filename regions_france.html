@@ -8,37 +8,13 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
-                padding: 0;
-                margin: 0;
-                height: 100vh; /* Prend toute la hauteur de la fenêtre */
-                display: flex;
-                flex-direction: column;
-                justify-content: center; /* Centre verticalement le contenu */
-                align-items: center; /* Centre horizontalement le contenu */
-                position: relative; /* Pour positionner le calque overlay */
-                background-image: url('image/fond_ecran_1.jpg'); /* Image de fond */
-                background-size: cover; /* Couvre toute la surface */
-                background-position: center; /* Centre l'image */
-                background-repeat: no-repeat; /* Ne répète pas l'image */
+                padding: 20px;
             }
 
-            /* Calque overlay pour assombrir l'image de fond */
-            body::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5); /* Calque semi-transparent noir */
-                z-index: 1; /* Positionne le calque sous le contenu principal */
-            }
-
-            /* Styles du contenu principal */
-            .title, .subtitle, .description, .button-container, p {
+            h1,
+            h2,
+            p.description {
                 text-align: center;
-                position: relative; /* Pour être au-dessus du calque overlay */
-                z-index: 2; /* Positionne le contenu principal au-dessus du calque */
             }
 
             h1 {
@@ -90,23 +66,75 @@
         </p>
 
         <div class="button-container">
-            <a class="button" href="region_auvergne-rhone-alpes.html">Auvergne-Rhône-Alpes</a>
-            <a class="button" href="region_bourgogne-franche-comte.html">Bourgogne-Franche-Comté</a>
-            <a class="button" href="region_bretagne.html">Bretagne</a>
-            <a class="button" href="region_centre-val_de_loire.html">Centre-Val de Loire</a>
-            <a class="button" href="region_corse.html">Corse</a>
-            <a class="button" href="region_grand_est.html">Grand Est</a>
-            <a class="button" href="region_hauts-de-france.html">Hauts-de-France</a>
-            <a class="button" href="region_ile-de-france.html">Île-de-France</a>
-            <a class="button" href="region_normandie.html">Normandie</a>
-            <a class="button" href="region_nouvelle-aquitaine.html">Nouvelle-Aquitaine</a>
-            <a class="button" href="region_occitanie.html">Occitanie</a>
-            <a class="button" href="region_pays_de_la_loire.html">Pays de la Loire</a>
-            <a class="button" href="region_provence-alpes-cote_dazur.html">Provence-Alpes-Côte d'Azur</a>
+            <a
+                class="button"
+                href="region_auvergne-rhone-alpes.html"
+                >Auvergne-Rhône-Alpes</a
+            >
+            <a
+                class="button"
+                href="region_bourgogne-franche-comte.html"
+                >Bourgogne-Franche-Comté</a
+            >
+            <a
+                class="button"
+                href="region_bretagne.html"
+                >Bretagne</a
+            >
+            <a
+                class="button"
+                href="region_centre-val_de_loire.html"
+                >Centre-Val de Loire</a
+            >
+            <a class="button" href="region_corse.html"
+                >Corse</a
+            >
+            <a
+                class="button"
+                href="region_grand_est.html"
+                >Grand Est</a
+            >
+            <a
+                class="button"
+                href="region_hauts-de-france.html"
+                >Hauts-de-France</a
+            >
+            <a
+                class="button"
+                href="region_ile-de-france.html"
+                >Île-de-France</a
+            >
+            <a
+                class="button"
+                href="region_normandie.html"
+                >Normandie</a
+            >
+            <a
+                class="button"
+                href="region_nouvelle-aquitaine.html"
+                >Nouvelle-Aquitaine</a
+            >
+            <a
+                class="button"
+                href="region_occitanie.html"
+                >Occitanie</a
+            >
+            <a
+                class="button"
+                href="region_pays_de_la_loire.html"
+                >Pays de la Loire</a
+            >
+            <a
+                class="button"
+                href="region_provence-alpes-cote_dazur.html"
+                >Provence-Alpes-Côte d'Azur</a
+            >
         </div>
 
         <p style="text-align: center">
-            <a class="button button-return" href="index.html">Retour à l'accueil</a>
+            <a class="button button-return" href="index.html"
+                >Retour à l'accueil</a
+            >
         </p>
     </body>
 </html>
