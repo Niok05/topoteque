@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autres pays</title>
     <style>
+      
       body {
-                padding: 0;
-                margin: 0;
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                height: 100vh; /* Prend toute la hauteur de la fenêtre */
-                display: flex;
-                justify-content: center;
-                align-items: center; 
-                position: relative; /* Pour positionner le calque overlay */  
-                background-image: url('image/fond_ecran_2.jpg'); /* Image de fond */
-                background-size: cover; /* Couvre toute la surface */
-                background-position: center; /* Centre l'image */
-                background-attachment: fixed; /* Rend l'image de fond fixe */
-                background-repeat: no-repeat; /* Ne répète pas l'image */  
-            }
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    min-height: 100vh; /* Utilisez min-height au lieu de height pour s'adapter à la taille du contenu */
+    background-image: url('image/fond_ecran_2.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre toute la surface */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Rend l'image de fond fixe */
+    background-repeat: no-repeat; /* Ne répète pas l'image */
+    /* Supprimez justify-content et align-items */
+}
 
-            main {
-                text-align: center; /* Centre le texte */
-                background-color: rgba(255, 255, 255, 0.5); /* Fond blanc avec opacité */
-                padding: 20px 40px; /* Ajoute de l'espace interne */
-                border-radius: 10px; /* Coins arrondis */
-                position: relative; /* Pour être au-dessus du calque overlay */
-                z-index: 2; /* Positionne le contenu principal au-dessus du calque */
-      }
+main {
+    text-align: center; /* Centre le texte */
+    background-color: rgba(255, 255, 255, 0.5); /* Fond blanc avec opacité */
+    padding: 20px 40px; /* Ajoute de l'espace interne */
+    border-radius: 10px; /* Coins arrondis */
+    position: relative; /* Pour être au-dessus du calque overlay */
+    z-index: 2; /* Positionne le contenu principal au-dessus du calque */
+    margin: 20px auto; /* Ajoute un peu d'espace autour du contenu */
+    max-width: 1200px; /* Largeur maximale du contenu */
+}
+
 
       h1.title {
         margin-top: 20px;
