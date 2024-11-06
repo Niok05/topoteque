@@ -6,17 +6,17 @@
     <title>Autres pays</title>
     <style>
       
-      body {
+    body 
+{
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    min-height: 100vh; /* Utilisez min-height au lieu de height pour s'adapter à la taille du contenu */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
     background-image: url('image/fond_ecran_2.jpg'); /* Image de fond */
     background-size: cover; /* Couvre toute la surface */
     background-position: center; /* Centre l'image */
     background-attachment: fixed; /* Rend l'image de fond fixe */
     background-repeat: no-repeat; /* Ne répète pas l'image */
-    /* Supprimez justify-content et align-items */
 }
 
 main {
@@ -26,10 +26,11 @@ main {
     border-radius: 10px; /* Coins arrondis */
     position: relative; /* Pour être au-dessus du calque overlay */
     z-index: 2; /* Positionne le contenu principal au-dessus du calque */
-    margin: 20px auto; /* Ajoute un peu d'espace autour du contenu */
-    max-width: 1200px; /* Largeur maximale du contenu */
+    margin: 20px auto; /* Centre le contenu horizontalement */
+    max-width: 1200px; /* Largeur maximale de l'élément, à ajuster selon la page index */
+    width: 90%; /* Largeur de 90% pour s'adapter sur les écrans plus petits */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
 }
-
 
       h1.title {
         margin-top: 20px;
