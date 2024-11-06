@@ -6,6 +6,7 @@
         <title>Topo Escalade - Régions de France</title>
         <link rel="stylesheet" href="styles.css" />
         <style>
+            /* Styles pour garder une mise en page cohérente avec les autres pages */
             body {
                 padding: 0;
                 margin: 0;
@@ -28,6 +29,8 @@
                 border-radius: 10px; /* Coins arrondis */
                 position: relative; /* Pour être au-dessus du calque overlay */
                 z-index: 2; /* Positionne le contenu principal au-dessus du calque */
+                max-width: 800px; /* Largeur maximale du contenu pour correspondre à l'index */
+                margin: 0 auto; /* Centrer horizontalement le contenu */
             }
 
             h1,
@@ -78,30 +81,32 @@
         </style>
     </head>
     <body>
-        <h1 class="title">Bienvenue en France</h1>
-        <h2 class="subtitle">Découvre les sites d'escalade par région</h2>
-        <p class="description">
-            Choisis une région et explore les sites d'escalade disponibles
-        </p>
+        <main>
+            <h1 class="title">Bienvenue en France</h1>
+            <h2 class="subtitle">Découvre les sites d'escalade par région</h2>
+            <p class="description">
+                Choisis une région et explore les sites d'escalade disponibles
+            </p>
 
-        <div class="button-container">
-            <a class="button" href="region_auvergne-rhone-alpes.html">Auvergne-Rhône-Alpes</a>
-            <a class="button" href="region_bourgogne-franche-comte.html">Bourgogne-Franche-Comté</a>
-            <a class="button" href="region_bretagne.html">Bretagne</a>
-            <a class="button" href="region_centre-val_de_loire.html">Centre-Val de Loire</a>
-            <a class="button" href="region_corse.html">Corse</a>
-            <a class="button" href="region_grand_est.html">Grand Est</a>
-            <a class="button" href="region_hauts-de-france.html">Hauts-de-France</a>
-            <a class="button" href="region_ile-de-france.html">Île-de-France</a>
-            <a class="button" href="region_normandie.html">Normandie</a>
-            <a class="button" href="region_nouvelle-aquitaine.html">Nouvelle-Aquitaine</a>
-            <a class="button" href="region_occitanie.html">Occitanie</a>
-            <a class="button" href="region_pays_de_la_loire.html">Pays de la Loire</a>
-            <a class="button" href="region_provence-alpes-cote_dazur.html">Provence-Alpes-Côte d'Azur</a>
-        </div>
+            <div class="button-container">
+                <a class="button" href="region_auvergne-rhone-alpes.html">Auvergne-Rhône-Alpes</a>
+                <a class="button" href="region_bourgogne-franche-comte.html">Bourgogne-Franche-Comté</a>
+                <a class="button" href="region_bretagne.html">Bretagne</a>
+                <a class="button" href="region_centre-val_de_loire.html">Centre-Val de Loire</a>
+                <a class="button" href="region_corse.html">Corse</a>
+                <a class="button" href="region_grand_est.html">Grand Est</a>
+                <a class="button" href="region_hauts-de-france.html">Hauts-de-France</a>
+                <a class="button" href="region_ile-de-france.html">Île-de-France</a>
+                <a class="button" href="region_normandie.html">Normandie</a>
+                <a class="button" href="region_nouvelle-aquitaine.html">Nouvelle-Aquitaine</a>
+                <a class="button" href="region_occitanie.html">Occitanie</a>
+                <a class="button" href="region_pays_de_la_loire.html">Pays de la Loire</a>
+                <a class="button" href="region_provence-alpes-cote_dazur.html">Provence-Alpes-Côte d'Azur</a>
+            </div>
 
-        <p style="text-align: center">
-            <a class="button button-return" href="index.html">Retour à l'accueil</a>
-        </p>
+            <p style="text-align: center">
+                <a class="button button-return" href="index.html">Retour à l'accueil</a>
+            </p>
+        </main>
     </body>
 </html>
