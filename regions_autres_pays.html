@@ -30,67 +30,126 @@
                 position: relative; /* Pour être au-dessus du calque overlay */
                 z-index: 2; /* Positionne le contenu principal au-dessus du calque */
             }
-
-            .title {
-                margin: 0;
-                line-height: 1.15;
-                font-size: 4rem;
+            h1.title {
+                margin-top: 20px;
+                font-size: 2em;
+                color: white; /* Couleur du texte en blanc */
             }
 
-            .subtitle {
-                font-size: 2rem;
-                margin: 0.5rem 0;
+            h2.subtitle {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                color: white; /* Couleur du texte en blanc */
             }
 
-            .description,
-            p {
-                margin: 2rem 0;
-                line-height: 1.5;
-                font-size: 1.5rem;
+            h3.country-title {
+                font-size: 1.8em;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                color: #007bff;
             }
 
-            .grid {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                max-width: 800px;
-                margin: 0 auto;
-            }
+      .grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-            .button {
-                display: inline-block;
-                background-color: #007bff;
-                color: white;
-                padding: 10px 20px;
-                margin: 10px;
-                border: none;
-                border-radius: 5px;
-                text-decoration: none;
-                font-size: 1rem;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
+      .card {
+        background-color: transparent;
+        color: black;
+        text-decoration: none;
+        padding: 15px 30px;
+        margin: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
 
-            .button:hover {
-                background-color: #0056b3;
-            }
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
 
-            .button:focus {
-                outline: none;
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <h1 class="title">La topothèque</h1>
-            <p>Rejoins la team en partageant tes topos !</p>
-            <p>Ensemble créons la plus belle topothèque possible afin de toujours trouver sa voie.</p>
-            <div class="grid">
-                <a class="button" href="regions_france.html">France</a>
-                <a class="button" href="regions_autres_pays.html">Autres Pays</a>
-            </div>
-        </main>
-    </body>
+      .card img:hover {
+        transform: scale(1.05);
+      }
+
+      .return-button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+      }
+
+      .return-button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Bienvenue à travers le monde</h1>
+      <h2 class="subtitle">Découvre les topos disponibles</h2>
+
+      <!-- Monde -->
+      <h3 class="country-title">Monde</h3>
+      <div class="grid">
+        <a
+          class="card"
+          href="https://drive.google.com/file/d/1fQFBRq4Op4xEOLSpB57Jeg5Tms4VuXi1/view?usp=drive_link"
+          target="_blank"
+        >
+          <div class="description-topo">
+            <h3>Parois de légende</h3>
+            <p>Sites de grande voie</p>
+          </div>
+          <img src="image/parois_de_legende.jpg" alt="Parois de légende - Monde" />
+        </a>
+      </div>
+
+      <!-- Croatie -->
+      <h3 class="country-title">Croatie</h3>
+      <div class="grid">
+        <a
+          class="card"
+          href="https://drive.google.com/file/d/1k0w29GbGLhTs6WqzDGGUfgjgoldUmdfY/view?usp=sharing"
+          target="_blank"
+        >
+          <div class="description-topo">
+            <h3>Croatia</h3>
+            <p>Site de voie & grande voie</p>
+          </div>
+          <img src="image/croatia.jpg" alt="Croatia - Croatie" />
+        </a>
+      </div>
+
+      <!-- Luxembourg -->
+      <h3 class="country-title">Luxembourg</h3>
+      <div class="grid">
+        <a
+          class="card"
+          href="https://drive.google.com/file/d/1LkS_XpVtDmOm-YH4DLjml3yq5N21wlWe/view?usp=sharing"
+          target="_blank"
+        >
+          <div class="description-topo">
+            <h3>Climbing in Berdorf</h3>
+            <p>Site de voie</p>
+          </div>
+          <img src="image/climbing_in_berdorf.jpg" alt="Climbing in Berdorf - Luxembourg" />
+        </a>
+      </div>
+
+      <a class="return-button" href="regions_france.html">Retour aux régions</a>
+    </main>
+  </body>
 </html>
-
