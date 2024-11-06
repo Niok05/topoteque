@@ -14,10 +14,20 @@
                 display: flex;
                 justify-content: center; /* Centre horizontalement */
                 align-items: center; /* Centre verticalement */
+                position: relative; /* Pour positionner le calque overlay */
+                background-image: url('image/fond_ecran.jpg'); /* Image de fond */
+                background-size: cover; /* Couvre toute la surface */
+                background-position: center; /* Centre l'image */
+                background-repeat: no-repeat; /* Ne répète pas l'image */
             }
 
             main {
                 text-align: center; /* Centre le texte à l'intérieur */
+                background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec opacité */
+                padding: 20px; /* Ajoute de l'espace interne */
+                border-radius: 10px; /* Coins arrondis */
+                position: relative; /* Pour être au-dessus du calque overlay */
+                z-index: 2; /* Positionne le contenu principal au-dessus du calque */
             }
 
             .title {
