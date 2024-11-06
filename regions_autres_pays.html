@@ -8,23 +8,45 @@
       body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background-color: #f5f5f5;
         margin: 0;
         padding: 0;
+        height: 100vh; /* Prend toute la hauteur de la fenêtre */
+        position: relative; /* Pour positionner le calque overlay */
+        background-image: url('image/fond_ecran.jpg'); /* Image de fond */
+        background-size: cover; /* Couvre toute la surface */
+        background-position: center; /* Centre l'image */
+        background-repeat: no-repeat; /* Ne répète pas l'image */
       }
 
+      /* Calque overlay pour assombrir l'image de fond */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Calque semi-transparent noir */
+        z-index: 1; /* Positionne le calque sous le contenu principal */
+      }
+
+      /* Styles du contenu principal */
       main {
         padding: 20px;
+        position: relative; /* Pour être au-dessus du calque overlay */
+        z-index: 2; /* Positionne le contenu principal au-dessus du calque */
       }
 
       h1.title {
         margin-top: 20px;
         font-size: 2em;
+        color: white; /* Couleur du texte en blanc */
       }
 
       h2.subtitle {
         font-size: 1.5em;
         margin-bottom: 20px;
+        color: white; /* Couleur du texte en blanc */
       }
 
       h3.country-title {
@@ -101,8 +123,8 @@
           <img src="image/parois_de_legende.jpg" alt="Parois de légende - Monde" />
         </a>
       </div>
-      
-  <!-- Croatie -->
+
+      <!-- Croatie -->
       <h3 class="country-title">Croatie</h3>
       <div class="grid">
         <a
@@ -117,8 +139,8 @@
           <img src="image/croatia.jpg" alt="Croatia - Croatie" />
         </a>
       </div>
-      
-        <!-- Luxembourg -->
+
+      <!-- Luxembourg -->
       <h3 class="country-title">Luxembourg</h3>
       <div class="grid">
         <a
@@ -138,4 +160,3 @@
     </main>
   </body>
 </html>
-
