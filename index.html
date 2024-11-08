@@ -6,16 +6,21 @@
         <title>Topo Escalade - Choisissez un Pays</title>
         <link rel="stylesheet" href="styles.css" />
         <style>
-             body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        padding: 20px;
-      }
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            
+            main {
+                padding: 20px;
+                flex: 1;
+            }
 
             .title {
                 margin: 0;
@@ -65,6 +70,22 @@
             .button:focus {
                 outline: none;
             }
+            
+            /* Bouton de contact en bas de la page */
+            .contact-button {
+                background-color: #28a745;
+                color: white;
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                margin: 20px 0;
+                transition: background-color 0.3s;
+            }
+
+            .contact-button:hover {
+                background-color: #218838;
+            }
         </style>
     </head>
     <body>
@@ -77,5 +98,8 @@
                 <a class="button" href="regions_autres_pays.html">Autres Pays</a>
             </div>
         </main>
+        
+        <!-- Bouton de contact en bas de page -->
+        <a class="contact-button" href="mailto:topopartage@gmail.com">Partager un Topo</a>
     </body>
 </html>
