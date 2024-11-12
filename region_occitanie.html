@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Occitanie</title>
-    <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Topo Escalade - Régions Occitanie</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
    body {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -15,169 +16,67 @@
       main {
         padding: 20px;
       }
+            h1,
+            h2,
+            p.description {
+                text-align: center;
+            }
 
-      h1.title {
-        margin-top: 20px;
-        font-size: 2em;
-      }
+            h1 {
+                margin-bottom: 20px;
+            }
 
-      h2.subtitle {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-      }
+            .button {
+                display: inline-block;
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
 
-      h3.dept-title {
-        font-size: 1.8em;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        color: #007bff;
-      }
+            .button:hover {
+                background-color: #0056b3;
+            }
 
-      .grid {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-      }
+            .button:focus {
+                outline: none;
+            }
 
-      .card {
-        background-color: transparent;
-        text-decoration: none;
-        padding: 15px 30px;
-        margin: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        width: 250px;
-        text-align: center;
-        transition: transform 0.3s ease;
-      }
+            /* Styles spécifiques pour le bouton de retour */
+            .button-return {
+                background-color: #28a745;
+            }
 
-      .card img {
-        width: 100%;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
+            .button-return:hover {
+                background-color: #218838;
+            }
 
-      .card img:hover {
-        transform: scale(1.05);
-      }
-
-      .description-topo {
-        margin-bottom: 10px; /* Adjust margin to create space below text */
-        color: black;
-      }
-
-      .description-topo h2 {
-        font-size: 1.4em;
-        margin-bottom: 5px;
-      }
-
-      .description-topo p {
-        font-size: 1em;
-      }
-
-      .return-button {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 15px 30px;
-        background-color: #28a745;
-        color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        font-size: 1.2em;
-        transition: background-color 0.3s ease;
-      }
-
-      .return-button:hover {
-        background-color: #218838;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1 class="title">Bienvenue en Occitanie</h1>
-      <h2 class="subtitle">Découvre les topos disponibles</h2>
-
-      <!-- Gard (30) -->
-      <h3 class="dept-title">Gard (30)</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1hZQlVhJ92Bl16Py01HWIe7yFn-JDhhpg/view?usp=sharing"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h2>La Capelle</h2>
-            <p>Site de bloc</p>
-          </div>
-          <img src="image/la_capelle.jpg" alt="La Capelle - Gard" />
-        </a>
-      </div>
-
-      <!-- Aveyron (12) -->
-      <h3 class="dept-title">Aveyron (12)</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1g9yPHjffGvG4SkhWZctGKFqCh5l3sGbd/view?usp=drive_link"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h2>La Blaquererie</h2>
-            <p>Site de bloc</p>
-          </div>
-          <img src="image/la_blaquererie.jpg" alt="La Blaquererie - Aveyron" />
-        </a>
-      </div>
-
-       <!-- Lozère (48) -->
-      <h3 class="dept-title">Lozère (48)</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1ED0M5sFrGvDCIYyNBg-YIllIOezppQhg/view?usp=sharing"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h2>Les gorges du Tarn</h2>
-            <p>Site de voie & grande voie</p>
-          </div>
-          <img src="image/les_gorges_du_tarn.jpg" alt="Les gorges du Tarn - Lozère" />
-        </a>
-      </div>
-
-      <!-- Hérault (34) -->
-      <h3 class="dept-title">Hérault (34)</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1tlq9W-z4bVZmELIZq2TzxU6wUYsJXMMV/view?usp=drive_link"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h2>L'Hortus</h2>
-            <p>Site de grande voie</p>
-          </div>
-          <img src="image/hortus.jpg" alt="L'Hortus - Hérault" />
-        </a>
-      </div>
-
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1Fqb1kyb2YypvlIFAzIedLojPFPATJHaY/view?usp=drive_link"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h2>Landeyran</h2>
-            <p>Site de voie</p>
-          </div>
-          <img src="image/landeyran.jpg" alt="Landeyran - Hérault" />
-        </a>
-      </div>
-
-      <a class="return-button" href="regions_france.html">Retour aux régions</a>
-    </main>
-  </body>
+            /* Centrer tous les boutons */
+            .button-container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="title">Bienvenue en Occitanie</h1>
+            <h2 class="subtitle">Choisis un département et explore les sites d'escalade disponibles</h2>
+          
+            <div class="button-container">
+                <a class="button" href="dep_12_aveyron.html">12 - L'Aveyron</a>
+                <a class="button" href="dep_30_gard.html">30 - Le Gard</a>
+                <a class="button" href="dep_48_lozere.html">48 - La Lozère</a>
+                <a class="button" href="dep_66_pyrenees_orientales.html">66 - Les Pyrénées Orientales</a>
+    
+            <p style="text-align: center">
+                <a class="button button-return" href="index.html">Retour à l'accueil</a>
+            </p>
+        </main>
+    </body>
 </html>
