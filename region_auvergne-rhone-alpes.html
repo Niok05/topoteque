@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auvergne-Rhône-Alpes</title>
-    <style>
-        body {
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Topo Escalade - Régions Auvergne-Rhone-Alpes</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+   body {
         font-family: Arial, sans-serif;
         text-align: center;
         background-color: #f5f5f5;
@@ -15,112 +16,65 @@
       main {
         padding: 20px;
       }
+            h1,
+            h2,
+            p.description {
+                text-align: center;
+            }
 
-      h1.title {
-        margin-top: 20px;
-        font-size: 2em;
-      }
+            h1 {
+                margin-bottom: 20px;
+            }
 
-      h2.subtitle {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-      }
+            .button {
+                display: inline-block;
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
 
-      h3.dept-title {
-        font-size: 1.8em;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        color: #007bff;
-      }
+            .button:hover {
+                background-color: #0056b3;
+            }
 
-      .grid {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-      }
+            .button:focus {
+                outline: none;
+            }
 
-      .card {
-        background-color: transparent;
-        color: black;
-        text-decoration: none;
-        padding: 15px 30px;
-        margin: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        width: 250px;
-        text-align: center;
-        transition: transform 0.3s ease;
-      }
+            /* Styles spécifiques pour le bouton de retour */
+            .button-return {
+                background-color: #28a745;
+            }
 
-      .card img {
-        width: 100%;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
+            .button-return:hover {
+                background-color: #218838;
+            }
 
-      .card img:hover {
-        transform: scale(1.05);
-      }
-
-      .description-topo {
-        margin-bottom: 15px;
-        color: black;
-      }
-
-      .description-topo h3 {
-        margin: 0;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-
-      .description-topo p {
-        margin: 5px 0;
-        font-size: 1em;
-      }
-
-      .return-button {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 15px 30px;
-        background-color: #28a745;
-        color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        font-size: 1.2em;
-        transition: background-color 0.3s ease;
-      }
-
-      .return-button:hover {
-        background-color: #218838;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1 class="title">Bienvenue en Auvergne-Rhône-Alpes</h1>
-      <h2 class="subtitle">Découvre les topos disponibles</h2>
-
-      <!-- Savoie -->
-      <h3 class="dept-title">Savoie (73)</h3>
-      <div class="grid">
-        <a
-          class="card"
-          href="https://drive.google.com/file/d/1zHOPlJGkAbM9-CD3BWjiovgMdZVHntPf/view?usp=sharing"
-          target="_blank"
-        >
-          <div class="description-topo">
-            <h3>Pontamafrey</h3>
-            <p>Savoie - Site de voie</p>
-          </div>
-          <img src="image/pontamafrey.jpg" alt="Pontamafrey - Savoie" />
-        </a>
-      </div>
-
-      <a class="return-button" href="regions_france.html"
-        >Retour aux régions</a
-      >
-    </main>
-  </body>
+            /* Centrer tous les boutons */
+            .button-container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="title">Bienvenue en Auvergne-Rhone-Alpes</h1>
+            <h2 class="subtitle">Choisis un département et explore les sites d'escalade disponibles</h2>
+          
+            <div class="button-container">
+                <a class="button" href="dep_38_isere.html">38 - L'Isère</a>
+                <a class="button" href="dep_73_savoie.html">73 - La Savoie</a>
+    
+            <p style="text-align: center">
+                <a class="button button-return" href="index.html">Retour à l'accueil</a>
+            </p>
+        </main>
+    </body>
 </html>
